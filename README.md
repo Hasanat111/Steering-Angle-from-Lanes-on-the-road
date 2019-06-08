@@ -3,7 +3,7 @@ Algorithm that steers a vehicle by using just the front-facing camera as an inpu
 Human drivers Identifying lanes on the road to ensure their vehicles are within lane constraints when driving, so as to make sure traffic is smooth and minimize chances of collisions with other cars due to lane misalignment. Similarly, it is a critical task for an self_driving  vehicle to detect lanes and find radius of curvature of the road from lanes.
 Video from the front facing camera is fed to this pipeline and the output is steering angle  and car offcenter from lanes center to ensure that car steer with lanes curvature and stay in the center of the lanes. Pipeline is as follows:
  
-Figure 1 0:Orignal image
+![1.1 original](https://user-images.githubusercontent.com/51098423/59150956-c213d680-8a44-11e9-8726-334819b1a73d.png)
 
 ### 1.1.1	Gray-Scale
  Convert original image to Gray scale
