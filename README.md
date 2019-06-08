@@ -28,7 +28,6 @@ In this step we determine a region of interest  in the form of isosceles trapezo
 ![4 ROI](https://user-images.githubusercontent.com/51098423/59150977-3d758800-8a45-11e9-9dc8-59ecf2f4bf94.png)
 
 
-[![](http://img.youtube.com/vi/fdMS_apcQHo/0.jpg)](http://www.youtube.com/watch?v=fdMS_apcQHo "Lane to steering Demo")
 
 
 ## 2	Finding Lanes And Drawing The Lane Area
@@ -55,4 +54,6 @@ The radius of curvature of the curve at a particular point is defined as the rad
 ### 3.2 Angle of curvature And Steering Angle
 The degree of curvature is defined as the central angle to the ends of an arc or chord of agreed length. Various lengths are commonly used in different areas of practice. This angle is also the change in forward direction as that portion of the curve is traveled. Where degree of curvature is based on 100 units of arc length, the conversion between degree of curvature and radius is Dr = 18000/π ≈ 5729.57795, where D is degree and r is radius.
  ![vlcsnap-2019-04-24-14h18m40s912](https://user-images.githubusercontent.com/51098423/59151011-8af1f500-8a45-11e9-81f5-59935e1f3d59.png)
+
+[![](http://img.youtube.com/vi/fdMS_apcQHo/0.jpg)](http://www.youtube.com/watch?v=fdMS_apcQHo "Lane to steering Demo")
 
