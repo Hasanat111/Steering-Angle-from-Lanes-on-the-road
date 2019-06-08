@@ -1,4 +1,6 @@
 ## Steering-Angle-from-Lanes-on-the-road
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/watch?v=8M2fUYpFyVAE/0.jpg)](https://www.youtube.com/watch?v=watch?v=8M2fUYpFyVA)
+
 Algorithm that steers a vehicle by using just the front-facing camera as an input feed.
 Human drivers Identifying lanes on the road to ensure their vehicles are within lane constraints when driving, so as to make sure traffic is smooth and minimize chances of collisions with other cars due to lane misalignment. Similarly, it is a critical task for an self_driving  vehicle to detect lanes and find radius of curvature of the road from lanes.
 Video from the front facing camera is fed to this pipeline and the output is steering angle  and car offcenter from lanes center to ensure that car steer with lanes curvature and stay in the center of the lanes. Pipeline is as follows:
