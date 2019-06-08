@@ -27,6 +27,10 @@ The OpenCV built-in function  requires two parameters in addition to our blurred
 In this step we determine a region of interest  in the form of isosceles trapezoidal and discard any lines outside of this polygon. We assume that the camera remains in the same place across all these image, and lanes are flat, therefore we can identify the critical region we are interested in. 
 ![4 ROI](https://user-images.githubusercontent.com/51098423/59150977-3d758800-8a45-11e9-9dc8-59ecf2f4bf94.png)
 
+
+[![](http://img.youtube.com/vi/fdMS_apcQHo/0.jpg)](http://www.youtube.com/watch?v=fdMS_apcQHo "Lane to steering Demo")
+
+
 ## 2	Finding Lanes And Drawing The Lane Area
 
 ### 2.1 Perspective Transform
