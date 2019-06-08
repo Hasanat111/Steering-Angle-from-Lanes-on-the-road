@@ -7,28 +7,21 @@ Video from the front facing camera is fed to this pipeline and the output is ste
 
 ### 1.1.1	Gray-Scale
  Convert original image to Gray scale
+![2 gray-scale](https://user-images.githubusercontent.com/51098423/59150965-07d09f00-8a45-11e9-89dd-ee02b75fa435.png)
 
- 
-Figure 1 1: Grayscale image
 ### 1.1.2	Gaussian Blur
 Gaussian Blur ( Gaussian smoothing) is a pre-processing technique used to smoothen the edges in an image to reduce noise. This step is needed to reduce the number of lines we detect, as we only want to focus on the most significant lines (the lane ones), not on other than road lanes. We must be careful as to not blur the images too much otherwise it will become hard to make up a line.
 In Opencv built-in function of  Gaussian Blur takes a integer kernel parameter which represents  the intensity of the smoothing. In our case we choose a value of 7. 
- 
-Figure 5 2: Gaussian Blur
+![3 blurred](https://user-images.githubusercontent.com/51098423/59150969-1dde5f80-8a45-11e9-85ff-fc93ad68b42a.png)
 
 ### 1.1.3	Canny Edge Detector
 Canny Edge Detector identifies  edges (sharp changes in brightness) in an image and discard all other data. The resulting image ends up being wiry, which enables us to focus on lane detection even more, since we are concerned with lines.
 The OpenCV built-in function  requires two parameters in addition to our blurred image, a low and high threshold which determines whether to include a given edge or not. A threshold captures the intensity of change of a given point. Any point beyond the high threshold will be included in our resulting image, while points between the threshold values will be included if they are next to edges beyond our high threshold. Edges that are below our low threshold are discarded. We use values 50 and 150 respectively for low and high thresholds.
-
- 
-Figure 5 3: Canny Edge detector
-
+![4 Canny edge detector](https://user-images.githubusercontent.com/51098423/59150971-2df63f00-8a45-11e9-99a8-2c62ac9cdf56.png)
 
 ### 1.1.4	Region of interest
 In this step we determine a region of interest  in the form of isosceles trapezoidal and discard any lines outside of this polygon. We assume that the camera remains in the same place across all these image, and lanes are flat, therefore we can identify the critical region we are interested in. 
- 
-Figure 5 4: ROI
-
+![4 ROI](https://user-images.githubusercontent.com/51098423/59150977-3d758800-8a45-11e9-9dc8-59ecf2f4bf94.png)
 
 ## 2	Finding Lanes And Drawing The Lane Area
 
@@ -53,6 +46,5 @@ The radius of curvature of the curve at a particular point is defined as the rad
  
 ### 3.2 Angle of curvature And Steering Angle
 The degree of curvature is defined as the central angle to the ends of an arc or chord of agreed length. Various lengths are commonly used in different areas of practice. This angle is also the change in forward direction as that portion of the curve is traveled. Where degree of curvature is based on 100 units of arc length, the conversion between degree of curvature and radius is Dr = 18000/π ≈ 5729.57795, where D is degree and r is radius.
- 
-Figure 5 6: Steering simulation and lanes drawing on road
+ ![vlcsnap-2019-04-24-14h18m40s912](https://user-images.githubusercontent.com/51098423/59151011-8af1f500-8a45-11e9-81f5-59935e1f3d59.png)
 
